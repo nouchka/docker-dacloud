@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+# start up openvpn
+exec /usr/sbin/openvpn --cd /etc/openvpn --config /etc/openvpn/openvpn.conf --redirect-gateway

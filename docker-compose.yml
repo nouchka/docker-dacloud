@@ -1,0 +1,13 @@
+dacloud:
+  image: nouchka/dacloud
+  privileged: true
+  environment:
+    - OVPN_LOGIN=test
+    - OVPN_PASSWORD=test
+  volumes:
+   - /home/jah/Desktop/dacloud:/ovpn
+  ports:
+   - "1080:1080"
+   - "8118:8118"
+  cap_drop:
+   - NET_ADMIN

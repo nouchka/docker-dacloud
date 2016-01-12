@@ -4,6 +4,8 @@ dacloud:
   environment:
     - OVPN_LOGIN=test
     - OVPN_PASSWORD=test
+    - OVPN_FILE=Sweden - Stockholm.ovpn
+    - DEBUG=1
   volumes:
    - /home/jah/Desktop/dacloud:/ovpn
   ports:
